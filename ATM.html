@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var pin = "555";
+        var total = "1000";
+
+
+
+       
+        var upin =prompt("Enter Your Pin");
+
+        
+        {
+            if( upin == pin)
+            {
+                alert("Welcome To Alfalh Bank Karachi");
+                var key =prompt("Alfalah Bank /n Press 1. To Desposit Amount /n Press 2. To Withdraw Amount Press 3. To Check The Balance");
+            }
+            else{
+                alert("Your Pin Is Incorrect");
+            }
+            
+        }
+        
+        
+        if ( key == 1)
+        {
+            var dbalance =parseInt( prompt("Enter Your Deposit Amount"));
+            var Balance = total + dbalance;
+            alert("Your Balance Is:" + Balance);
+
+        }
+        if( key == 2)
+        {
+            var wbalance =parseInt(prompt("Your Current Balance Is:" + total +"/n please Enter Your Withdraw Amount"));
+            var sub = total - wbalance;
+            if( sub >=0 &&  sub <= total)
+            {
+                alert("Enter Your sub withdraw Balance" + sub);
+            }
+            else{
+                alert("Your balance Is Infficent")
+            }
+        }
+        if( key == 3)
+        {
+            alert("Your Total Amount is:" + total);
+        }
+        
+    </script>
+</body>
+</html>
